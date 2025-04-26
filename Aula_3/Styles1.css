@@ -1,7 +1,7 @@
 .main-container {
   display: flex;
   flex-direction: column;
-  gap: 20px ;
+  gap: 20px;
 }
 
 .container {
@@ -36,5 +36,38 @@
 
 #box3 {
   text-align: center;
+  width: 100px;
+  height: 100px;
 }
 
+#bottom-container {
+  flex: 2;
+}
+
+#box5 {
+  display: grid;
+  grid-template-areas:
+    "box6 box7"
+    "box8 box9";
+  border: 2px solid red;
+}
+
+#box6 {
+  grid-area: box6;
+  background-color: aqua;
+}
+
+#box7 {
+  grid-area: box7;
+  background-color: gray;
+}
+
+#box8 {
+  grid-area: box8;
+  background-color: yellow;
+}
+
+#box9 {
+  grid-area: box9;
+  background-color: red;
+}
